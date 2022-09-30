@@ -37,7 +37,7 @@ int main()
         tmr1.reset();
         while (tmr1.elapsed_time() < 500ms); //How about this for C++ magic :)
 
-        wait_us(500000);
+        //wait_us(500000);
 
         //Turn off LED
         ledRed = 0;

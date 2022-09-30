@@ -28,6 +28,7 @@ int main()
 
         //Wait for switch press and release (by BLOCKING)
         while (SW2.read() == 0);
+        wait_us(1000);
         ledRed = !ledRed;
         wait_us(300000);
 
