@@ -2,7 +2,7 @@
 
 //Contructor
 TrafficLight::TrafficLight(PinName redPin, PinName yellowPin, PinName greenPin) 
-                                                        : redLED(redPin), yellowLED(yellowPin), greenLED(greenPin)
+    : redLED(redPin), yellowLED(yellowPin), greenLED(greenPin)
 {
     // These objects are already initialised in the member initialisation list above
     redLED = 1;
@@ -63,6 +63,15 @@ void TrafficLight::updateOutput()
             greenLED = 0;
             break;                
     }       
+}
+
+// Reset the lights to red
+void TrafficLight::stop()
+{
+    flashYellow(false);
+    redLED = 1;
+    yellowLED = 0;
+    greenLED = 0;
 }
 
 // Moore machine - next state logic

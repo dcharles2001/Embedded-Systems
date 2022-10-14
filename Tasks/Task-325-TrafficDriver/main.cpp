@@ -8,6 +8,7 @@ TrafficLight::LIGHT_STATE s;
 
 int main()
 {
+
     while (true) {
 
         //Wait for switch press
@@ -25,6 +26,8 @@ int main()
         //Switch debounce
         wait_us(300000);
         
+        lights.stop();
+        wait_us(300000);
     }
 }
 

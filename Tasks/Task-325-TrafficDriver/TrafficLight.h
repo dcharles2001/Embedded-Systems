@@ -33,6 +33,7 @@ class TrafficLight
 
     //Advance the traffic lights to the next state
     LIGHT_STATE nextState();
+    void stop();
 
 };
 
