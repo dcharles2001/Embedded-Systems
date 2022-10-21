@@ -61,10 +61,11 @@ public:
 
     // Override + in the parent class
     ComplexNumber operator+(ComplexNumber& u) {
-        ComplexNumber result;
-
+        //ComplexNumber result;
         //TO BE DONE
-
+        this->_real += u._real;
+        this->_imag += u._imag;
+        ComplexNumber result(_real, _imag);
         return result;
     }
 };

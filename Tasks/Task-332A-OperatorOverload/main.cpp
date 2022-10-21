@@ -86,7 +86,14 @@ public:
     {
         // Return a true if u is equal to `this`
         // ** TO BE DONE BY THE STUDENT **
-        return false;
+        DoubleNumber test;
+        test = this->_real; 
+        if(test == u) { 
+            return true;
+        }else
+        {
+            return false;
+        }
     }
 
     operator double() {

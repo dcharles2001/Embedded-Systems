@@ -10,7 +10,7 @@ int main()
     DoubleNumber  d1;
     
     //This uses the operator= function
-    d1 = 5.0;
+    d1 = 9.0;
 
     //Write the value as a string
     cout << d1.asString() << endl;
@@ -26,7 +26,7 @@ int main()
 
     //TODO - write an overloaded + operator
     DoubleNumber sum1 = c0 + c1 + d0 + d1;
-    cout << sum1 << endl;
+    cout << sum1.asString() << endl;
 
     while (true) {
 
